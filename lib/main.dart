@@ -1,16 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:physiotherapy/doctor/dprecords.dart';
-import 'package:physiotherapy/doctor/dprequest.dart';
-import 'package:physiotherapy/doctor/dprofile.dart';
-import 'package:physiotherapy/doctor/dvideo.dart';
-import 'package:physiotherapy/login.dart';
-import 'package:physiotherapy/patient/profile.dart';
-import 'package:physiotherapy/patient/records.dart';
-import 'package:physiotherapy/patient/video.dart';
 import 'package:physiotherapy/signup.dart';
-import 'patient/psignup.dart';
-import 'patient/video.dart';
-import 'doctor/dsignup.dart';
+
+import 'patient/demo_video.dart';
 
 void main() {
   runApp(const MyApp());
@@ -79,7 +70,8 @@ class _MyHomePageState extends State<MyHomePage> {
             const Text("Have an Account?"),
             ElevatedButton(
               onPressed: (){
-                Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext)=> Dprecords()));}, 
+                Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext)=> CameraExampleHome()));
+                }, 
               child: const Text("Login"))
           ],)
       ],
