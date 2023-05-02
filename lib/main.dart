@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:physiotherapy/signup.dart';
 
-import 'patient/demo_video.dart';
+import 'patient/demo_video2.dart';
+import '';
 
 void main() {
   runApp(const MyApp());
@@ -70,7 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {
             const Text("Have an Account?"),
             ElevatedButton(
               onPressed: (){
-                Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext)=> CameraExampleHome()));
+                Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext)=> demo_video()));
                 }, 
               child: const Text("Login"))
           ],)
